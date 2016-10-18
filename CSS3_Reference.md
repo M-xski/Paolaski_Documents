@@ -306,8 +306,14 @@ La propiedad `visibility` establece si un elemento es visible o no.
 La propiedad `opacity` establece la transparencia del elemento al que hacen referencia. El 0% de transparencia sería 1. El 50% sería 0.5. `filter` es el equivalente para algunos exploradores.  
 
 ### Position - Posicionamiento
-````css
+```` css
 *{
-  
+  position: static | relative | fixed | absolute;
+  top: auto;
+  left: auto;
+  right: auto;
+  bottom: auto;
 }
 ````
+`position` establece el tipo de posicionamiento que tendrá en relación a la página.  
+**static** define que el elemento al que hace referencia está pùesto según el flujo normal de la página.   **relative** define que el elemento tendrá cierta dependencia de posición en función del contenido de la izquierda y derecha. Se necesita una posición relativa para que funcione el posicionamiento **top, left, bottom, right**.  
