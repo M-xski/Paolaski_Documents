@@ -1,6 +1,13 @@
-###### *Paula Pérez Tafalla | Desarrollo de Aplicaciones Web en Entorno Cliente - Curso 2016-17*
+###### *Kurumi · Studio (cc) 2016*
 
 ## JavaScript: Reference Guide
+Guía basada en el contenido ofrecido por [W3Schools](http://www.w3schools.com/js/default.asp)
+
+### Herramientas Online
+-
+
+### Index
+
 
 #### Introducción
 JavaScript puede cambiar el contenido de los documentos HTML, encontramos los siguientes métodos:
@@ -76,12 +83,12 @@ Al igual que CSS, JavaScript tiene tres formas de ubicar su código:
 ### Tipos de salida
 Si quisiéramos mostrar datos, tenemos cuatro formas distintas:
 
-Forma | Descripción |
---|---|--
-`window.alert()` | Creará una ventana emergente mostrando lo que se introduzca dentro del paréntesis.
-`document.write()` | Creará un texto en el que mostrará el contenido del paréntesis.
-`document.getElementById("id_elemento").innerHTML = resultado` | Cambiará el elemento que tenga el mismo id por el *resultado*.
-`console.log()` | En este caso el resultado del paréntesis no se mostrará en la vista de usuario si no que será mostrado en la consola del explorador **`(F12)`**.
+Forma | Descripción  
+------|--------------  
+`window.alert()` | Creará una ventana emergente mostrando lo que se introduzca dentro del paréntesis.  
+`document.write()` | Creará un texto en el que mostrará el contenido del paréntesis.  
+`document.getElementById("id_elemento").innerHTML = resultado` | Cambiará el elemento que tenga el mismo id por el *resultado*.  
+`console.log()` | En este caso el resultado del paréntesis no se mostrará en la vista de usuario si no que será mostrado en la consola del explorador **`(F12)`**.  
 
 ### Sintaxis
 `//Los comentarios unilínea se escriben con // al principio de la frase.`
@@ -126,14 +133,14 @@ function name(parameter1, parameter2, parameter3) {
 ### Eventos
 Son reacciones que ocurren en el documento HTML al hacer alguna acción. Encontramos distintos eventos:
 
-Evento | Descripcion
---|---|--
-`onchange` | Cuando un elemento HTML ha sido cambiado
-`onclick` | Cuando el usuario selecciona algún elemento *(pulsar un botón, por ejemplo)*
-`onmouseover` | Cuando el cursor pasa por encima del elemento
-`onmouseout` | Cuando el cursor deja de estar encima del elemento
-`onkeydown` | Cuando el usuario pulsa una tecla del teclado
-`onload` | Cuando carga una página
+Evento | Descripcion  
+-------|------------  
+`onchange` | Cuando un elemento HTML ha sido cambiado  
+`onclick` | Cuando el usuario selecciona algún elemento *(pulsar un botón, por ejemplo)*  
+`onmouseover` | Cuando el cursor pasa por encima del elemento  
+`onmouseout` | Cuando el cursor deja de estar encima del elemento  
+`onkeydown` | Cuando el usuario pulsa una tecla del teclado  
+`onload` | Cuando carga una página  
 
 ```html
 <button onclick='document.getElementById("demo").innerHTML=Date()'>The time is?</button>
@@ -153,19 +160,19 @@ Para acceder a toda la cadena de texto de un elemento se utiliza `.length`.
 
 Existe el carácter de escape `\` en los string que sirven para determinados objetivos:
 
-Código | Definición
---|---|--
-`\'` | comilla simple
-`\"` | doble comillas
-`\\` | barra invertida
-`\n` | nueva línea
-`\r` | retorno de carro
-`\t` | tabulador
-`\b` | espacio
-`\f` | salto de línea
+Código | Definición  
+-------|-----------  
+`\'` | comilla simple  
+`\"` | doble comillas  
+`\\` | barra invertida  
+`\n` | nueva línea  
+`\r` | retorno de carro  
+`\t` | tabulador  
+`\b` | espacio  
+`\f` | salto de línea  
 
 #### Métodos de los Strings
-método | descripción
---|---|--
-`indexOf()`      |    Devuelve la primera posición del primer carácter del texto pasado por parámetro.
-`lastIndexOf()`  |    Devuelve la última posicón del primer carácter del texto pasado por parámetro.
+método | descripción  
+-------|------------  
+`indexOf()`      |    Devuelve la primera posición del primer carácter del texto pasado por parámetro.  
+`lastIndexOf()`  |    Devuelve la última posicón del primer carácter del texto pasado por parámetro.  
