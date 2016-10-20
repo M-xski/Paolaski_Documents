@@ -1,4 +1,4 @@
-###### *Kurumi · Studio (c) 2016*
+###### *Kurumi · Studio (cc) 2016*
 
 ## Guía HTML5: HyperText Markup Language
 Guía de referencia de HTML5 basada en la documentación de [W3Schools](http://www.w3schools.com/html/default.asp)
