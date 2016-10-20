@@ -1,4 +1,4 @@
-###### *Paula Pérez Tafalla - 2º Desarrollo de Aplicaciones Web - Diseño de Interfaces Web - Curso 2016/17*
+###### *Kurumi · Studio*
 
 ## Guía HTML5: HyperText Markup Language
 Guía de referencia de HTML5 basada en la documentación de [W3Schools](http://www.w3schools.com/html/default.asp)
