@@ -60,27 +60,27 @@ Existen tres formas de definir los colores en CSS:
 Su valor no depende de otro de referencia.
 
 Unidad | Definición  
---|---|--  
-in | pulgadas  
-cm | centímetros  
-mm | milímetros  
-pt | puntos  
-pc | picas  
+-------|------------ 
+in     | pulgadas  
+cm     | centímetros  
+mm     | milímetros  
+pt     | puntos  
+pc     | picas  
   
 ##### Unidades relativas:
 Su valor depende de otro absoluto.  
 
 Unidad | Definición  
---|---|--  
-em | respectiva al tamaño por defecto del inicio  
-rem | respectiva al tamaño del elemento padre  
-ex | respectiva a la altura de la letra `x` del tipo y tamaño de la letra  
-px | píxeles, relativa respecto a la resolución del monitor  
-vh | height, relativa a la resolución del monitor  
+-------|----------------------------------------------------------------- 
+em     | respectiva al tamaño por defecto del inicio  
+rem    | respectiva al tamaño del elemento padre  
+ex     | respectiva a la altura de la letra `x` del tipo y tamaño de la letra  
+px     | píxeles, relativa respecto a la resolución del monitor  
+vh     | height, relativa a la resolución del monitor  
 
   
 ### Background - Fondos de la Página
-```` css
+``` css
   *{
     background-color: /*color válido explicado antes*/;
     background-image: url("ruta/imagen.png");
@@ -89,7 +89,7 @@ vh | height, relativa a la resolución del monitor
     background-position: left top | left center | left bottom | right top | right center | right bottom |
     center top | center center | center bottom;
   }
-````
+```
 Además podrán agruparse en una misma propiedad, `background:` en la que asignarle varios atributos.  
 
 `background-color` establece un color de fondo según las formas explicadas antes.  
@@ -103,8 +103,7 @@ Además podrán agruparse en una misma propiedad, `background:` en la que asigna
 **fixed** se quedará fijo y solo se moverá el contenido de la página.  
 
 ### Border - Bordes del contenido
-
-```` css
+``` css
   *{
     border-style: dotted | dashed | solid | double | groove | ridge | inset | outset | none | hidden;
     border-width: 5px;
@@ -112,7 +111,7 @@ Además podrán agruparse en una misma propiedad, `background:` en la que asigna
     border-right | border-top | border-bottom | border-left: solid red 1px;
     border-radius: 10px;
   }
-````
+```
 Además se puede agrupar en una misma propiedad, `border:` en la que asignarle varios atributos.  
 Si quisiéramos agregar un estilo distinto para cada lado del borde, hay distintas formas:  
 Cuatro atributos: **arriba, derecha, izquierda, abajo**. *Ejemplo: border: dotted dashed solid inset red 2px;*  
@@ -127,7 +126,7 @@ Un atributo: **todos**. *Ejemplo: border: dotted*.
 `border-right | border-top | border-bottom | border-left` establece un estilo para el borde derecho, superior, inferior o izquierdo.  
 
 ### Margin - Márgenes
-```` css
+``` css
   *{
     margin: 10px 10px | auto;
     margin-left: 10px;
@@ -135,12 +134,12 @@ Un atributo: **todos**. *Ejemplo: border: dotted*.
     margin-top: 10px;
     margin-bottom: 10px;
   }
-````
+```
 `margin` asigna un margen externo, podemos asignarlo simplemente con las propiedades añadiendo cuatro, tres, dos o un atributo con la simple etiqueta o definirlos de forma individual.  
 Admite valores negativos, porcentajes (medida relativa que escala en relación a la resolución del monitor) e incluso la ausencia de borde.  
 
 ### Padding - Margen interno/relleno
-```` css
+``` css
 *{
   padding: 10px;
   padding-left:10px;
@@ -148,11 +147,11 @@ Admite valores negativos, porcentajes (medida relativa que escala en relación a
   padding-bottom:10px;
   padding-right:10px;
 }
-````
+```
 `padding` corresponde al relleno, al margen interno del elemento, podemos asignarlo al igual que el margen con más de un atributo mediante esta etiqueta o definirlos de forma individual. Admite porcentajes.  
 
 ### Height x Width - Altura x Anchura
-```` css
+``` css
   *{
     height: 500px;
     max-height: 500px;
@@ -161,7 +160,7 @@ Admite valores negativos, porcentajes (medida relativa que escala en relación a
     min-width: 500px;
     width: 500px;
    }
-````
+```
 Tanto `width` como `height` no establecen un margen o un padding, solo establecen un tamaño al contenedor o elemento al que hacen referencia. Admite cualquier unidad de medida y porcentajes.  
 
 Al agregar un `max-width` establece la máxima anchura del elemento o contenedor.  
@@ -173,7 +172,7 @@ El modelo de cajas es el método por el cual diferenciamos los elementos y los d
 `outline - margin - border - padding - contenido`.  
 
 ### Outline - Contorno
-```` css
+``` css
   *{
     outline: inherit;
     outline-color: blue;
@@ -182,13 +181,13 @@ El modelo de cajas es el método por el cual diferenciamos los elementos y los d
     outline-offset: 10px;
     outline-width: thin |thick | medium;
    }
-````
+```
 `outline` establece un contorno por fuera del margen del elemento al que hacen referencia. Es una forma de hacer que el elemento al que hacen referencia *destaque* de alguna forma.  
 La principal diferencia del outline con border es que el primero no forma parte del elemento en sí, puesto que no afecta a sus dimensiones.
 **outline-offset** establece un espacio entre el outline y el borde.  
 
 ### Text - Textos
-```` css
+``` css
   *{
       color: /*color válido*/;
       text-align: center | left | right | justify;
@@ -205,7 +204,7 @@ La principal diferencia del outline con border es que el primero no forma parte 
       vertical-align: baseline | length(50px) | sub | super | top | text-top |
       middle | bottom | text-bottom;
    }
-````
+```
 `text-align` permite alinear el texto según se elija, centrado, justificado a la derecha o izquierda.  
 `text-decoration` permite decorar el texto con una linea superior, una linea de subrayado o una linea de tachado.  
 `text-transform` permite un cambio en el texto, capitalizado, todo a minúscula, todo a mayúscula o que compartan el mismo tamaño cada letra.  
@@ -222,10 +221,8 @@ Sus atributos: **ltr** izq hacia der. **rtl** der hacia izq.
 `word-spacing` Establece el espacio entre las palabras.  
 `vertical-align` Establece un margen vertical al texto.  
 
-----
-
 ### Font - Fuentes
-```` css
+``` css
   @font-face {
     font-family: 'name';
     src: url('ruta o enlace');
@@ -238,8 +235,7 @@ Sus atributos: **ltr** izq hacia der. **rtl** der hacia izq.
     font-weight: bold | bolder | lighter;
     font-variant: normal | small-caps;
  }
-````
-
+```
 Podemos encontrar dos tipos de fuentes:  
   - por familia genérica: **serif, sans-serif, monospace**
   - por una fuente concreta: **georgia, arial, courier new**
@@ -253,7 +249,7 @@ Podemos encontrar dos tipos de fuentes:
 `@font-face` establece una ruta para agregar familias de fuentes ajenas a las predefinidas, con **font-family** elegimos el nombre asignado para llamarle después, y con **src: url()** la ruta del archivo que contiene la fuente.  
 
 ### Icons & SVG - Iconos y gráficos vectoriales
-```` html
+``` html
 <!DOCTYPE html>
 <html>
 <head>
@@ -266,17 +262,17 @@ Podemos encontrar dos tipos de fuentes:
   </svg>
 </body>
 </html>
-````
+```
 Existe la posibilidad de agregar iconos mediante las etiquetas `<i>` o `<span>`, con enlaces a librerías de iconos mediante los cuales basta con agregar clases a las etiquetas ya mencionadas. *(Un ejemplo serían los octicons de GitHub o los iconos de bootstrap)*.  
 `SVG` significa gráficos vectoriales, ocupan mucho menos espacio que una imagen y aunque pueden ser importados como imagen, HTML permite la posibilidad de generarlos mediante la etiqueta `<svg></svg>`.
 
 ### Links - Enlaces
-````css
+```css
 a:link{ text-decoration: none; }
 a:hover{ text-decoration: underline; }
 a:active{ text-decoration: underline;}
 a:visited{ color: black;}
-````
+```
 
 Para agregar estilos a un enlace, se tendrá que hacer referencia a los estados por los que pasa cada uno de estos.  
 `:link` es el enlace sin propiciar ningún evento en él.  
@@ -285,19 +281,19 @@ Para agregar estilos a un enlace, se tendrá que hacer referencia a los estados 
 `:visited` enlace ya visitado previamente.  
 
 ### Lists - Listados
-````css
+```css
   *{
     list-style-type: circle | disc | square | lower-alpha | lower-greek | lower-latin | upper-alpha | none;
     list-style-image: url('image.png');
     list-style-position: inside | outside;
   }
-````
+```
 `list-style-type` Elige el tipo de indentificación para los elementos de la lista, algunos de los más usados son los que aparecen en el ejemplo.  
 `list-style-image` Selecciona una imagen para que haga de identificador de cada elemento de la lista.  
 `list-style-position` Establece la sangría del listado. **inside** establecerá mayor sangría que **outside**.  
 
 ### Tables - Tablas
-```` css
+``` css
 *{
   border: /*propiedades ya vistas sobre los bordes*/
   border-collapse: collapse | separate;
@@ -311,7 +307,7 @@ Para agregar estilos a un enlace, se tendrá que hacer referencia a los estados 
 tr:nth-child(even | odd){
   background-color: lightgray;
 }
-````
+```
 Por defecto las tablas tienen dos bordes, uno que contiene la tabla y otro interno para cada celda.  
 `border-collapse` Establece la unión de los dos bordes que se agregan por defecto de la tabla.  
 `caption-side` Establece la ubicación del `caption` o título de la tabla.  
@@ -321,7 +317,7 @@ El atributo **:nth-child(even | odd)** sirve para diferenciar las filas pares o 
 Si quisieramos hacer una tabla responsive tendríamos que agregar a la etiqueta `<table>` o al `<div>` contenedor el estilo **overflow-x: auto**.   Eso agregaría una barra de desplazamiento horizontal bajo la tabla.  
 
 ### Display, Visibility & Opacity
-````css
+```css
 *{
   display: block | inline | flex | grid | inline-flex;
   visibility: visible | hidden;
@@ -329,13 +325,13 @@ Si quisieramos hacer una tabla responsive tendríamos que agregar a la etiqueta 
   opacity: 0.5;
   filter: alpha(opacity=50);
 }
-````
+```
 La propiedad `display` cambia la forma en la que se dispone el elemento al que hace referencia, en **block** significa que no admite nada a su izquierda o derecha, **inline** que forma parte de la línea con otros elementos. **flex** permite colocar los elementos de una página para que se comporten de forma predecible cuando el diseño de la página debe acomodarse a diferentes tamaños de pantalla y diferentes dispositivos.  
 La propiedad `visibility` establece si un elemento es visible o no.  
 La propiedad `opacity` establece la transparencia del elemento al que hacen referencia. El 0% de transparencia sería 1. El 50% sería 0.5. `filter` es el equivalente para algunos exploradores.  
 
 ## Position - Posicionamiento
-```` css
+``` css
 *{
   position: static | relative | fixed | absolute;
   top: auto;
@@ -343,30 +339,30 @@ La propiedad `opacity` establece la transparencia del elemento al que hacen refe
   right: auto;
   bottom: auto;
 }
-````
+```
 `position` establece el tipo de posicionamiento que tendrá en relación a la página.  
 **static** define que el elemento al que hace referencia está pùesto según el flujo normal de la página.  
 **relative** define que el elemento tendrá cierta dependencia de posición en función del contenido de la izquierda y derecha. Se necesita una posición relativa para que funcione el posicionamiento **top, left, bottom, right**.  
 
 ## Overflow - Desplazamiento 
-```` css
+``` css
   *{
     overflow: visible | hidden | scroll | auto;
     overflow-x: ;
     overflow-y: ;
    }
-````
+```
 `Overflow` corresponde al desplazamiento vertical y horizontal de la página. `overflow-x` y `overflow-y` se refieren a la barra horizontal y vertical respectivamente.  
 **hidden** ocultará las barras de desplazamiento.  
 **visible** no se recortará tamaño para agregar las barras de desplazamiento, aparecerán cuando sea necesario.  
 **scroll** aparecen permanentemente las barras de desplazamiento.  
   
 ## Float - 
-```` css
+``` css
   *{
     float: none | left | right | initial;
     clear: right | left;
   }
-````  
+```  
 
 
