@@ -8,6 +8,7 @@ Guía basada en la documentación que ofrece [W3Schools](http://www.w3schools.co
 
 ## Index  
 - [Posicionamiento][#Position---Posicionamiento]  
+
 ======  
 
 ### Introducción
