@@ -3,9 +3,12 @@
 ## CSS3 - Cascade Style Sheets REFERENCE GUIDE
 Guía basada en la documentación que ofrece [W3Schools](http://www.w3schools.com/css) sobre las hojas de estilo en cascada.  
 
+## Herramientas online:  
+- [CSSMinifer](www.cssminifier.com)
+
 ## Index
-  - [Posicionamiento](#Position - Posicionamiento)
-  - 
+
+======
 
 ### Introducción
 Para ubicar los estilos, existen tres formas:  
@@ -54,9 +57,12 @@ Su valor depende de otro absoluto.
 
 Unidad | Definición  
 --|---|--  
-em | respectiva al tamaño por defecto de las letras  
+em | respectiva al tamaño por defecto del inicio  
+rem | respectiva al tamaño del elemento padre  
 ex | respectiva a la altura de la letra `x` del tipo y tamaño de la letra  
 px | píxeles, relativa respecto a la resolución del monitor  
+vh | height, relativa a la resolución del monitor  
+
   
 ### Background - Fondos de la Página
 ```` css
@@ -309,7 +315,7 @@ La propiedad `display` cambia la forma en la que se dispone el elemento al que h
 La propiedad `visibility` establece si un elemento es visible o no.  
 La propiedad `opacity` establece la transparencia del elemento al que hacen referencia. El 0% de transparencia sería 1. El 50% sería 0.5. `filter` es el equivalente para algunos exploradores.  
 
-##Position - Posicionamiento
+## Position - Posicionamiento
 ```` css
 *{
   position: static | relative | fixed | absolute;
@@ -322,3 +328,26 @@ La propiedad `opacity` establece la transparencia del elemento al que hacen refe
 `position` establece el tipo de posicionamiento que tendrá en relación a la página.  
 **static** define que el elemento al que hace referencia está pùesto según el flujo normal de la página.  
 **relative** define que el elemento tendrá cierta dependencia de posición en función del contenido de la izquierda y derecha. Se necesita una posición relativa para que funcione el posicionamiento **top, left, bottom, right**.  
+
+## Overflow - Desplazamiento 
+```` css
+  *{
+    overflow: visible | hidden | scroll | auto
+    overflow-x: ;
+    overflow-y: ;
+   }
+````
+`Overflow` corresponde al desplazamiento vertical y horizontal de la página. `overflow-x` y `overflow-y` se refieren a la barra horizontal y vertical respectivamente.  
+**hidden** ocultará las barras de desplazamiento.  
+**visible** no se recortará tamaño para agregar las barras de desplazamiento, aparecerán cuando sea necesario.  
+**scroll** aparecen permanentemente las barras de desplazamiento.  
+  
+## Float - 
+```` css
+  *{
+    float: none | left | right | initial;
+    clear: right | left;
+  }
+````  
+
+
