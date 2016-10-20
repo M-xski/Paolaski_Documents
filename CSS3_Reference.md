@@ -7,7 +7,7 @@ Guía basada en la documentación que ofrece [W3Schools](http://www.w3schools.co
 - [CSSMinifer](www.cssminifier.com)
 
 ## Index  
-- [Posicionamiento](#Position---Posicionamiento)  
+- [Posicionamiento](#position---posicionamiento)  
 
 ======  
 
