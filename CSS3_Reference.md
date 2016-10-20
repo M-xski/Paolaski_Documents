@@ -19,7 +19,7 @@ Guía basada en la documentación que ofrece [W3Schools](http://www.w3schools.co
 - [Box Model - Modelo de Cajas](#box-model---modelo-de-cajas)  
 - [Outline - Contorno](#outline---contorno)  
 - [Text - Textos](#text---textos)  
-- [Fonts - Fuentes](#fonts---fuentes)  
+- [Fonts - Fuentes](#font---fuentes)  
 - [Icons & SVG - Iconos y Gráficos Vectoriales](#icons--svg---iconos-y-gráficos-vectoriales)  
 - [Posicionamiento](#position---posicionamiento)  
 
@@ -49,11 +49,11 @@ Se puede hacer referencia a los elementos html id y class mediante dos elementos
 #### Colores:
 Existen tres formas de definir los colores en CSS:  
 
-Forma | Ejemplo  
---|---|--  
-Nombre válido | `red, black, white, gray`  
-valor RGB | `rgb(255, 0, 0)`  
-valor Hexadecimal | `#FAFAFA`  
+   Forma          |         Ejemplo  
+------------------|---------------------------  
+   Nombre válido  | `red, black, white, gray`  
+   valor RGB      | `rgb(255, 0, 0)`  
+   Hexadecimal    | `#FAFAFA`  
 
 #### Unidades de medida:
 ##### Unidades Absolutas:
