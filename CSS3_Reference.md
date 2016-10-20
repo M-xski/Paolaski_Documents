@@ -19,9 +19,7 @@ Guía basada en la documentación que ofrece [W3Schools](http://www.w3schools.co
 - [Outline - Contorno](#outline---contorno)  
 - [Text - Textos](#text---textos)  
 - [Fonts - Fuentes](#fonts---fuentes)  
-- [Icons & SVG - Iconos y Gráficos Vectoriales](#Icons---)  
-- []()  
-
+- [Icons & SVG - Iconos y Gráficos Vectoriales](#icons--svg---iconos-y-gráficos-vectoriales)  
 - [Posicionamiento](#position---posicionamiento)  
 
 ======  
