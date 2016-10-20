@@ -1,7 +1,7 @@
 ###### *Paula Pérez Tafalla - 2º Desarrollo de Aplicaciones Web - Diseño de Interfaces Web - Curso 2016/17*
 
 ## Guía HTML5: HyperText Markup Language
-Guía de referencia de HTML5 basada en la documentación de [W3Schools](www.w3schools.com/html/)
+Guía de referencia de HTML5 basada en la documentación de [W3Schools](http://www.w3schools.com/html/default.asp)
 
 ## Herramientas online
 - [HTML5 Cheatsheet - By EMEZETA](http://i.emezeta.com/weblog/html5-cheatsheet/html5-cheatsheet-emezeta.pdf)
