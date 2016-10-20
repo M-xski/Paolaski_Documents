@@ -1,9 +1,27 @@
 ###### *Paula Pérez Tafalla - 2º Desarrollo de Aplicaciones Web - Diseño de Interfaces Web - Curso 2016/17*
 
 ## Guía HTML5: HyperText Markup Language
+Guía de referencia de HTML5 basada en la documentación de [W3Schools](www.w3schools.com/html/)
+
+## Herramientas online
+- []()
+- []()
+
+## Index
+- [Head](#head)
+- [Body](#body)
+- [Identificadores](#identificadores)
+- [Elementos del texto](#elementos-del-texto)
+- [Tablas](#tablas)
+- [Listas](#listas)
+- [iFrames](#iframes)
+- [Secciones](#seciones-html5)
+- [Formularios](#formularios)
+- [Contenido multimedia](#contenido-multimedia)
+
 ----
 
-```` html
+``` html
 <!DOCTYPE html>
   <html lang="es-ES">
     <head>
@@ -22,13 +40,13 @@
     <body>
     </body>
   </html>
-````
+```
 
-**`<!Doctype html>`** Define el documento HTML, solo se abre esta etiqueta.  
+**`<!doctype html>`** Define el documento HTML, solo se abre esta etiqueta.  
 **`<html>`** Abre el documento de html, dentro de estas etiquetas irá todo el documento, además con el atributo *lang* defines el idioma en el que se escribe.
 
 ### Head
-  #####  La etiqueta `<head>` contendrá información de la página.
+La etiqueta `<head>` contendrá información de la página.
   **`<meta>`** Define metadatos para la página.  
   Los atributos que puede tener son:  
     **charset**: Define el tipo de codificación, por ejemplo: UTF-8.  
