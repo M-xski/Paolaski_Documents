@@ -6,9 +6,9 @@ Guía basada en la documentación que ofrece [W3Schools](http://www.w3schools.co
 ## Herramientas online:  
 - [CSSMinifer](www.cssminifier.com)
 
-## Index
+## Index  
 - [Posicionamiento][#Position---Posicionamiento]  
-======
+======  
 
 ### Introducción
 Para ubicar los estilos, existen tres formas:  
