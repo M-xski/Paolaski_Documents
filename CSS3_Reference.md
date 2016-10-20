@@ -4,7 +4,7 @@
 Guía basada en la documentación que ofrece [W3Schools](http://www.w3schools.com/css) sobre las hojas de estilo en cascada.  
 
 ## Index
-  - [Positioning](#Position)
+  - [Posicionamiento](#Position)
   - 
 
 ### Introducción
