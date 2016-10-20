@@ -7,6 +7,8 @@ Guía basada en la documentación que ofrece [W3Schools](http://www.w3schools.co
 - [CSSMinifer](www.cssminifier.com)
 
 ## Index  
+- [Introducción](#introducción)  
+- [Sintaxis](#sintaxis)
 - [Posicionamiento](#position---posicionamiento)  
 
 ======  
