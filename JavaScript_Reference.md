@@ -1,15 +1,27 @@
 ###### *Kurumi · Studio (cc) 2016*
 
 ## JavaScript: Reference Guide
-Guía basada en el contenido ofrecido por [W3Schools](http://www.w3schools.com/js/default.asp)
+Guía basada en el contenido ofrecido por [W3Schools](http://www.w3schools.com/js/default.asp).
 
 ### Herramientas Online
--
+- []()
 
 ### Index
+- [Introducción](#introducción)
+- [Ubicación](#ubicación)
+- [Tipos de salida](#tipos-de-salida)
+- [Sintaxis](#sintaxis)
+- [Operadores](#operadores)
+- [Variables](#variables)
+- [Tipos de datos](#tipos-de-datos)
+- [Funciones](#funciones)
+- [Eventos](#eventos)
+- [Objetos](#objetos)
+- [Strings](#strings)
+  -[Métodos de los strings](#métodos-de-los-strings)
 
 
-#### Introducción
+## Introducción
 JavaScript puede cambiar el contenido de los documentos HTML, encontramos los siguientes métodos:
 
 ``` html
@@ -46,7 +58,7 @@ Si quisiéramos cambiar algo del estilo (CSS) sería con el método `document.ge
 
 Con el atributo de CSS display, podríamos hacer desaparecer elementos o hacerlos aparecer.
 
-### Ubicación
+## Ubicación
 Al igual que CSS, JavaScript tiene tres formas de ubicar su código:
 
 - **En el body**:
@@ -80,7 +92,7 @@ Al igual que CSS, JavaScript tiene tres formas de ubicar su código:
   </body>
 ```
 
-### Tipos de salida
+## Tipos de salida
 Si quisiéramos mostrar datos, tenemos cuatro formas distintas:
 
 Forma | Descripción  
@@ -90,7 +102,7 @@ Forma | Descripción
 `document.getElementById("id_elemento").innerHTML = resultado` | Cambiará el elemento que tenga el mismo id por el *resultado*.  
 `console.log()` | En este caso el resultado del paréntesis no se mostrará en la vista de usuario si no que será mostrado en la consola del explorador **`(F12)`**.  
 
-### Sintaxis
+## Sintaxis
 `//Los comentarios unilínea se escriben con // al principio de la frase.`
 `/* Los comentarios
   multiínea se escriben con /* y */. */`
@@ -100,19 +112,19 @@ JavaScript ignora los múltiples espacios.
 No se declara el tipo de variable pero sí se identifican. *Ejemplo:* `var x = 5;`.
 Los string pueden definirse con `"comillas dobles"` o `'comillas'`.
 
-###### Operadores
+### Operadores
 Los operadores existentes: `+ - / * ++ --`.
 
-###### Variables
+### Variables
 Para dar un nombre a las variables se recomida el método **under_score** o el método **camelCase**.
 
-###### Tipos de datos
+### Tipos de datos
 Número: `var length = 16;`
 String: `var lastName = "Johnson";`
 Array: `var cars = ["Saab", "Volvo", "BMW"];`
 Objetos: `var x = {firstName:"John", lastName:"Doe"};`
 
-### Funciones
+## Funciones
 Las funciones son bloques de código que devuelven un resultado. Se utilizan cuando ocurre un evento (click de un botón, por ejemplo), se invoca algo, o se autoinvoca. Si al final de la función está el **return**, la función dará su final ahí.
 ``` javascript
 function name(parameter1, parameter2, parameter3) {
@@ -121,7 +133,7 @@ function name(parameter1, parameter2, parameter3) {
 }
 ```
 
-### Objetos
+## Objetos
 ``` javascript
   var person = {
     firstName:"John",
@@ -130,7 +142,7 @@ function name(parameter1, parameter2, parameter3) {
     eyeColor:"blue"};
 ```
 
-### Eventos
+## Eventos
 Son reacciones que ocurren en el documento HTML al hacer alguna acción. Encontramos distintos eventos:
 
 Evento | Descripcion  
@@ -147,7 +159,7 @@ Evento | Descripcion
 ```
 *Ejemplo: al hacer click en el botón mostrará la fecha*.
 
-### Strings
+## Strings
 Los strings son cadenas de carácteres, se definen entre dobles comillas o comillas como ya se ha mencionado.
 ``` javascript
 var ejemplo = 'cadena';
@@ -171,7 +183,7 @@ Código | Definición
 `\b` | espacio  
 `\f` | salto de línea  
 
-#### Métodos de los Strings
+### Métodos de los Strings
 método | descripción  
 -------|------------  
 `indexOf()`      |    Devuelve la primera posición del primer carácter del texto pasado por parámetro.  
