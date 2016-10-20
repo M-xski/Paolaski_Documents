@@ -8,8 +8,20 @@ Guía basada en la documentación que ofrece [W3Schools](http://www.w3schools.co
 
 ## Index  
 - [Introducción](#introducción)  
-- [Sintaxis](#sintaxis)
-- [Background - Fondos](#background---fondos-de-la-página)
+- [Sintaxis](#sintaxis)  
+  - *Identificadores, Pseudo-Clases, Colores, Unidades de medida.*  
+- [Background - Fondos](#background---fondos-de-la-página)  
+- [Border - Bordes del contenido](#border---bordes-del-contenido)  
+- [Margin - Márgenes](#margin---márgenes)  
+- [Padding - Relleno](#padding---margen-internorelleno)  
+- [Height x Width](#height-x-width---altura-x-anchura)  
+- [Box Model - Modelo de Cajas](#box-model---modelo-de-cajas)  
+- [Outline - Contorno](#outline---contorno)  
+- [Text - Textos](#text---textos)  
+- [Fonts - Fuentes](#fonts---fuentes)  
+- [Icons & SVG - Iconos y Gráficos Vectoriales](#Icons---)  
+- []()  
+
 - [Posicionamiento](#position---posicionamiento)  
 
 ======  
@@ -241,7 +253,7 @@ Podemos encontrar dos tipos de fuentes:
 
 `@font-face` establece una ruta para agregar familias de fuentes ajenas a las predefinidas, con **font-family** elegimos el nombre asignado para llamarle después, y con **src: url()** la ruta del archivo que contiene la fuente.  
 
-### Icons - Iconos
+### Icons & SVG - Iconos y gráficos vectoriales
 ```` html
 <!DOCTYPE html>
 <html>
@@ -250,10 +262,14 @@ Podemos encontrar dos tipos de fuentes:
 </head>
 <body>
   <i class="fa fa-cloud"></i> <br/> <i class="fa fa-heart"></i>
+  <svg width="400" height="100">
+    <rect width="400" height="100" style="fill:rgb(0,0,255);stroke-width:10;stroke:rgb(0,0,0)" />
+  </svg>
 </body>
 </html>
 ````
-Existe la posibilidad de agregar iconos mediante las etiquetas `<i> o <span>`, con enlaces a librerías de iconos mediante los cuales basta con agregar clases a las etiquetas ya mencionadas. *(Un ejemplo serían los octicons de GitHub o los iconos de bootstrap)*.  
+Existe la posibilidad de agregar iconos mediante las etiquetas `<i>` o `<span>`, con enlaces a librerías de iconos mediante los cuales basta con agregar clases a las etiquetas ya mencionadas. *(Un ejemplo serían los octicons de GitHub o los iconos de bootstrap)*.  
+`SVG` significa gráficos vectoriales, ocupan mucho menos espacio que una imagen y aunque pueden ser importados como imagen, HTML permite la posibilidad de generarlos mediante la etiqueta `<svg></svg>`.
 
 ### Links - Enlaces
 ````css
