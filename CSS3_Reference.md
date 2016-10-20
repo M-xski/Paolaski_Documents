@@ -309,7 +309,7 @@ La propiedad `display` cambia la forma en la que se dispone el elemento al que h
 La propiedad `visibility` establece si un elemento es visible o no.  
 La propiedad `opacity` establece la transparencia del elemento al que hacen referencia. El 0% de transparencia sería 1. El 50% sería 0.5. `filter` es el equivalente para algunos exploradores.  
 
-## Position - Posicionamiento
+##Position - Posicionamiento
 ```` css
 *{
   position: static | relative | fixed | absolute;
