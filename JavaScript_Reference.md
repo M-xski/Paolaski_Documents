@@ -1,12 +1,12 @@
 ###### *Kurumi · Studio (cc) 2016*
 
-## JavaScript: Reference Guide
+# JavaScript: Reference Guide
 Guía basada en el contenido ofrecido por [W3Schools](http://www.w3schools.com/js/default.asp).
 
 ### Herramientas Online
 - [JSBin - A collaborative JS debugging](https://jsbin.com/?html,js,output)
 
-### Index
+## Index
 - [Introducción](#introducción)
 - [Ubicación](#ubicación)
 - [Tipos de salida](#tipos-de-salida)
