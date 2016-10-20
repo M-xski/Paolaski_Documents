@@ -1,4 +1,4 @@
-##### *Paula Pérez Tafalla | 2º Desarrollo de Aplicaciones Web | Curso 2016-17*
+##### *Kurumi Studio | 2016 - 2017*
 
 ## CSS3 - Cascade Style Sheets REFERENCE GUIDE
 Guía basada en la documentación que ofrece [W3Schools](http://www.w3schools.com/css) sobre las hojas de estilo en cascada.  
