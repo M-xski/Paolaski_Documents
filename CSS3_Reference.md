@@ -28,11 +28,11 @@ Guía basada en la documentación que ofrece [W3Schools](http://www.w3schools.co
 ### Introducción
 Para ubicar los estilos, existen tres formas:  
 
-Forma | Estilo | Ejemplo  
---|---|--  
-En línea | En cada elemento html |  ````<p style="color: red"></p>````  
-Interno | En las etiquetas ````<style></style>```` del head | ````<head><style> * { color: red; } </style></head>````  
-Externo | Link enlazando al documento externo | ````<head><link rel="stylesheet" type="text/css" href="mystyle.css"></head>````  
+   Forma    |     Estilo    |    Ejemplo  
+ -----------|---------------|---------------   
+  En línea  | En elementos html |  `<p style="color: red"></p>`
+  Interno   | En las etiquetas `<style></style>` del head | `<head><style> * { color: red; } </style></head>`  
+  Externo   | Link enlazando al documento externo | `<head><link rel="stylesheet" type="text/css" href="mystyle.css"></head>`  
   
 Se suele utilizar la forma externalizada, es la forma de dividir lo máximo posible el código html del css.  
   
