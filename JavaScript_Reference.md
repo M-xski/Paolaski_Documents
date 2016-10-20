@@ -4,6 +4,7 @@
 Guía basada en el contenido ofrecido por [W3Schools](http://www.w3schools.com/js/default.asp) sobre JavaScript.
 
 ### Herramientas Online
+- [JavaScript CheatSheet - By EMEZETA](http://www.emezeta.com/doc/javascript-cheatsheet/?amount=0&cmd=_donations&hosted_button_id=6XU7D2MX6ZJCA&business=joseromanhernandez%40gmail.com&return=http%3A%2F%2Fwww.emezeta.com%2Fdoc%2Fjavascript-cheatsheet%2Findex.php&item_name=Javascript+Cheatsheet+%28Donation%29&currency_code=EUR)
 - [JSBin - A collaborative JS debugging](https://jsbin.com/?html,js,output)
 
 ## Index
