@@ -9,6 +9,7 @@ Guía basada en la documentación que ofrece [W3Schools](http://www.w3schools.co
 ## Index  
 - [Introducción](#introducción)  
 - [Sintaxis](#sintaxis)
+- [Background - Fondos](#background---fondos-de-la-página)
 - [Posicionamiento](#position---posicionamiento)  
 
 ======  
@@ -335,7 +336,7 @@ La propiedad `opacity` establece la transparencia del elemento al que hacen refe
 ## Overflow - Desplazamiento 
 ```` css
   *{
-    overflow: visible | hidden | scroll | auto
+    overflow: visible | hidden | scroll | auto;
     overflow-x: ;
     overflow-y: ;
    }
