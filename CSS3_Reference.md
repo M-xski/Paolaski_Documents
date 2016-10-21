@@ -22,6 +22,8 @@ Guía basada en la documentación que ofrece [W3Schools](http://www.w3schools.co
 - [Fonts - Fuentes](#font---fuentes)  
 - [Icons & SVG - Iconos y Gráficos Vectoriales](#icons--svg---iconos-y-gráficos-vectoriales)  
 - [Posicionamiento](#position---posicionamiento)  
+- [Float - Clear](#float-y-clear) 
+- [Layout: Horizontal - Vertical align](#layout-horizontal---vertical-align)
 
 ======  
 
@@ -46,6 +48,29 @@ Si usaramos los tres estilos, el orden por el que prevalecerían los cambios ser
 Se puede hacer referencia a los elementos html id y class mediante dos elementos: **. para class y # para id**.  
 *Ejemplo: .nomclass { color: red }*  
 
+#### Selectores  
+Los selectores unen o especifican los elementos a los que se les va a aplicar el estilo. Existen varios selectores:  
+
+   Selector    |    Descripción  
+---------------|-------------------------------
+  (espacio)    |    Selector de descendiente   
+      >        |    Selector de hijo (child)
+      +        |    Selector de adjacente(hermano) 
+      ~        |    Selector general  
+
+El `(space)` seleccionará todos los descendientes de un elemento especificado. Ejemplo: **div p** haría referencia a todos los elemeptos **p** contenidos dentro de **div**.  
+El elemento `(>)` seleccionará todos los hijos inmediatos de un elemento especificado. Ejemplo: 
+
+``` html
+  <div>
+  <p>Paragraph 1 in the div.</p>
+  <p>Paragraph 2 in the div.</p>
+  <span><p>Paragraph 3 in the div.</p></span> <!-- no es hijo pero sí descendiente -->
+```  
+
+
+
+      
 #### Colores:
 Existen tres formas de definir los colores en CSS:  
 
@@ -319,14 +344,14 @@ Si quisieramos hacer una tabla responsive tendríamos que agregar a la etiqueta 
 ### Display, Visibility & Opacity
 ```css
 *{
-  display: block | inline | flex | grid | inline-flex;
+  display: block | inline | inline-block | flex | grid | inline-flex;
   visibility: visible | hidden;
 
   opacity: 0.5;
   filter: alpha(opacity=50);
 }
 ```
-La propiedad `display` cambia la forma en la que se dispone el elemento al que hace referencia, en **block** significa que no admite nada a su izquierda o derecha, **inline** que forma parte de la línea con otros elementos. **flex** permite colocar los elementos de una página para que se comporten de forma predecible cuando el diseño de la página debe acomodarse a diferentes tamaños de pantalla y diferentes dispositivos.  
+La propiedad `display` cambia la forma en la que se dispone el elemento al que hace referencia, en **block** significa que no admite nada a su izquierda o derecha, **inline** que forma parte de la línea con otros elementos. **flex** permite colocar los elementos de una página para que se comporten de forma predecible cuando el diseño de la página debe acomodarse a diferentes tamaños de pantalla y diferentes dispositivos. **inline-block** es cuando un elemento inline queremos que se comporte como bloque, un ejemplo equivalente al antigulo `float:left + clear:left;` a cajas de contenido.
 La propiedad `visibility` establece si un elemento es visible o no.  
 La propiedad `opacity` establece la transparencia del elemento al que hacen referencia. El 0% de transparencia sería 1. El 50% sería 0.5. `filter` es el equivalente para algunos exploradores.  
 
@@ -368,4 +393,51 @@ Si un elemento es más alto que el elemento que lo contiene, y que se hace flota
 ```  
 El elemento `float` en su uso mas sencillo, es que flota alrededor del contenido. Un ejemplo sencillo sería aplicar float a las imágenes para que estas ajusten el texto a las mismas.  
 La propiedad `clear` sirve para que el elemento al que hace referencia se quede en la misma sin ningún elemento al lado al que hace referencia, puede ser **right, left, both**.  
+
+## Layout: Horizontal - Vertical align
+``` css
+  /* Para posicionar un elemento centrado + texto centrado */ 
+  .center {
+    margin: auto;
+    text-align: center;
+  }
+  
+  /* Para centrar una imagen usar display:block + margin:auto */
+  img{
+    display: block;
+    margin: auto;
+  }
+  
+  /* Usando left and right align */ 
+  .right {
+    position: absolute;
+    right: 0px;
+    width: 300px;
+    border: 3px solid #73AD21;
+    padding: 10px;
+  }
+  
+  /*Centrado vertical*/
+  .center {
+    padding: 70px 0;
+  }
+  
+  /* Usando line-height */
+  .center {
+    line-height: 200px;
+    height: 200px;
+    border: 3px solid green;
+    text-align: center;
+  }
+
+  /* Si el texto tiene múltiples líneas: */
+  .center p {
+      line-height: 1.5;
+      display: inline-block;
+      vertical-align: middle;
+  }
+```
+
+
+
 
