@@ -356,13 +356,16 @@ La propiedad `opacity` establece la transparencia del elemento al que hacen refe
 **hidden** ocultará las barras de desplazamiento.  
 **visible** no se recortará tamaño para agregar las barras de desplazamiento, aparecerán cuando sea necesario.  
 **scroll** aparecen permanentemente las barras de desplazamiento.  
+
+Si un elemento es más alto que el elemento que lo contiene, y que se hace flotar, se desborde fuera de su recipiente. Para evitarlo, podemos añadir `overflow: auto;` al elemento que contiene para solucionar este problema.
   
-## Float - 
+## Float y Clear
 ``` css
   *{
     float: none | left | right | initial;
     clear: right | left;
   }
 ```  
-
+El elemento `float` en su uso mas sencillo, es que flota alrededor del contenido. Un ejemplo sencillo sería aplicar float a las imágenes para que estas ajusten el texto a las mismas.  
+La propiedad `clear` sirve para que el elemento al que hace referencia se quede en la misma sin ningún elemento al lado al que hace referencia, puede ser **right, left, both**.  
 
