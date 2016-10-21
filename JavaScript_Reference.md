@@ -187,5 +187,22 @@ Código | Definición
 ### Métodos de los Strings
 método | descripción  
 -------|------------  
-`indexOf()`      |    Devuelve la primera posición del primer carácter del texto pasado por parámetro.  
-`lastIndexOf()`  |    Devuelve la última posicón del primer carácter del texto pasado por parámetro.  
+`indexOf()`            |    Devuelve la primera posición del primer carácter del texto pasado por parámetro.  
+`lastIndexOf()`        |    Devuelve la última posicón del primer carácter del texto pasado por parámetro.  
+`search()`             |    Busca una cadena que coincida con el string pasado por parámetro, devuelve su posición.  
+`slice(start, end)`    |    Extrae la cadena comprendida entre las posiciones que se le pasan por parámetro. Si se le pasan valores negativos, este comienza por el final.  
+`split("-")`           |    Devuelve la cadena dividida cada carácter por el elemento pasado por parámetros.  
+`substr(start, end)`   |    Es similar a `slice()`, pero no admite valores negativos, y el segundo valor establece el final del string extraído.  
+`replace("valueA", "valueB")` | Sustituye algún elemento del string que coincida con el primer valor por el segundo valor pasado por parámetro.  
+`toUpperCase()`       |    Convierte la cadena de texto en mayúsculas.  
+`toLowerCase()`       |    Convierte la cadena de texto en minúsculas.  
+`concat()`            |    Une dos cadenas, equivalente a "+" de los strings.  
+`charAt(position)`    |    Devuelve el carácter de la posición pasada por parámetro.
+`charCodeAt(position)`|    Devuelve el carácter unicode del carácter al que hace referencia.  
+`link()`              |    Devuelve una cadena como link.  
+ 
+## Number 
+
+
+
+
