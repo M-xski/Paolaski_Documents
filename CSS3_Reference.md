@@ -107,11 +107,19 @@ Clase         |   Ejemplo      |    Descripción
 
 #### Pseudo-Elementos
 Selector    | 	Ejemplo   |  	Descripción
+------------|-------------|--------------------------------------------------------------
 ::after	    |   p::after	|   Instertar contenido despues de cada elemento `<p>` 
 ::before	  |   p::before	|   Insetar contenido antes de cada elemento `<p>`
 ::first-letter|p::first-letter| Selecciona la primera letra de cada elemento `<p>` 
 ::first-line | p::first-line | Selecciona la primera línea de cada elemento `<p>`  
 ::selection |	p::selection |	Selecciona un fragmento del elemento definido por el usuario  
+
+**Sintaxis:**  
+``` css
+selector::pseudo-element {
+    property:value;
+}
+```
 
 #### Colores:
 Existen tres formas de definir los colores en CSS:  
