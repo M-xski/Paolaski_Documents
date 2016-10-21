@@ -10,7 +10,7 @@ Guía basada en la documentación que ofrece [W3Schools](http://www.w3schools.co
 ## Index  
 - [Introducción](#introducción)  
 - [Sintaxis](#sintaxis)  
-  - *Identificadores, Pseudo-Clases, Colores, Unidades de medida.*  
+  - *[Identificadores](#identificadores), [Pseudo-Clases](#pseudo-clases), [Colores](#colores), [Unidades de medida](#unidades-de-medida).*  
 - [Background - Fondos](#background---fondos-de-la-página)  
 - [Border - Bordes del contenido](#border---bordes-del-contenido)  
 - [Margin - Márgenes](#margin---márgenes)  
@@ -58,19 +58,44 @@ Los selectores unen o especifican los elementos a los que se les va a aplicar el
       +        |    Selector de adjacente(hermano) 
       ~        |    Selector general  
 
-El `(space)` seleccionará todos los descendientes de un elemento especificado. Ejemplo: **div p** haría referencia a todos los elemeptos **p** contenidos dentro de **div**.  
-El elemento `(>)` seleccionará todos los hijos inmediatos de un elemento especificado. Ejemplo: 
-
+El `(space)` seleccionará todos los descendientes de un elemento específico. Ejemplo: **div p** haría referencia a todos los elemeptos **p** contenidos dentro de **div**.  
+El elemento `(>)` seleccionará todos los hijos inmediatos de un elemento específico. Ejemplo: **div > p**  
 ``` html
   <div>
-  <p>Paragraph 1 in the div.</p>
-  <p>Paragraph 2 in the div.</p>
+  <p>Paragraph 1 in the div.</p> <!-- hijo directo -->
+  <p>Paragraph 2 in the div.</p> <!-- hijo directo -->
   <span><p>Paragraph 3 in the div.</p></span> <!-- no es hijo pero sí descendiente -->
 ```  
+El elemento `(+)` hace referencia a los elementos adjacentes de un elemento específico. Ejemplo `div + p` haría referencia al elemento **p** que está declarado después de **div**.  
+El elemento `(~)` hace referencia a todos los elementos adjacentes de un elemento específico. Ejemplo `div ~ p` haría referencia a todos los elementos **p** que van declarados después de **div**.  
+
+#### Pseudo-Clases:
+Las pseudo-clases hacen referencia a estados temporales de los elementos, a estados por los que pasan al ser por ejemplo seleccionados, vistos (como los enlaces, etc). Las clases que existen son: 
+
+Clase         |   Ejemplo      |    Descripción  
+--------------|----------------|-----------------------------------------------  
+:active	      |   a:active	   |    Selecciona el link activo (tras hacer click)  
+:checked	    | input:checked  |  	Selecciona todos los `<input>` utilizados  
+:disabled	    | input:disabled |	  Selecciona todos los `<input>` desactivados  
+:empty	      |   p:empty	     |    Selecciona todos los `<p>` que no tienen hijos  
+:enabled	    | input:enabled  |  	Selecciona todos los `<input>` que están activados  
+:first-child  | p:first-child  |	  Selecciona todos los `<p>` que son los primer hijo de su padre  
+:first-of-type| p:first-of-type|    Selecciona todos los `<p>` que son los primer hijo de `<p>` de su padre  
+:focus	      |   input:focus  |   	Selecciona todos los `<input>` que están con el foco (siendo utilizados-seleccionados)  
+:hover      	|     a:hover    |  	Selecciona el link mientras está el cursor encima  
+:in-range	    | input:in-range |  	Selecciona todo elemento `<input>` sin un rango específico  
+:invalid	    | input:invalid	 |    Selecciona todos los `<input>` que tengan un valor inválido  
+:lang         | 	p:lang(it)   |	  Selecciona todos los `<p>` con el atributo lang que tiene value comenzando en "it"  
+:last-child	  |  p:last-child  |    Selecciona todo `<p>` que sea el último hijo de su padre  
+:last-of-type |	p:last-of-type |    Selecciona todos los `<p>` que sea el ultimo `<p>` de su padre  
+:link	        |     a:link     |   	Selecciona el enlace sin visitar  
+:not(selector)| 	  :not(p)    |  	Selecciona todos los elementos que no sean `<p>`  
+:nth-child(n)	| p:nth-child(2) |	  Selecciona todos los `<p>` que sean el segundo hijo de su padre  
+:nth-last-child(n) |  p:nth-last-child(2) |	Selecciona todos los `<p>` que sean el segundo hijo de su padre, contando desde el último hijo  
+:nth-last-of-type(n) |	p:nth-last-of-type(2) |	Selecciona todos los `<p>` que sean el segundo `<p>` de su padre, contando desde el ultimo hijo  
+:nth-of-type(n) | p:nth-of-type(2)  |	Selecciona todo elemento `<p>` que sea el segundo `<p>` de su padre  
 
 
-
-      
 #### Colores:
 Existen tres formas de definir los colores en CSS:  
 
