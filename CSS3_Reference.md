@@ -93,8 +93,25 @@ Clase         |   Ejemplo      |    Descripción
 :nth-child(n)	| p:nth-child(2) |	  Selecciona todos los `<p>` que sean el segundo hijo de su padre  
 :nth-last-child(n) |  p:nth-last-child(2) |	Selecciona todos los `<p>` que sean el segundo hijo de su padre, contando desde el último hijo  
 :nth-last-of-type(n) |	p:nth-last-of-type(2) |	Selecciona todos los `<p>` que sean el segundo `<p>` de su padre, contando desde el ultimo hijo  
-:nth-of-type(n) | p:nth-of-type(2)  |	Selecciona todo elemento `<p>` que sea el segundo `<p>` de su padre  
+:nth-of-type(n) | p:nth-of-type(2)  |	Selecciona todo elemento `<p>` que sea el segundo `<p>` de su padre   
+:only-of-type	|  p:only-of-type | 	Selecciona todo elemento `<p>` que es el único `<p>` de su padre  
+:only-child 	|  p:only-child   |  	Selecciona todo elemento `<p>` que sea el único hijo de su padre  
+:optional   	|  input:optional | 	Selecciona todo  `<input>` que no tengan el atributo "required"  
+:out-of-range	|input:out-of-range|	Selecciona todo `<input>` con un valor específico fuera de rango  
+:read-only	  | input:read-only | 	Selecciona todo `<input>` con el atributo específico "readonly"  
+:required	    | input:required  | 	Selecciona todo `<input>` con el atributo "required" especificado
+:root	        |       root      |	  Selecciona el elemento root del documento  
+:target	      |   #news:target  |	  Selecciona el activo elemento #news (tras hacer click en un enlace que contiene ese nombre de ancla)  
+:valid	      |   input:valid   | 	Selecciona todos los `<input>` con un valor válido  
+:visited      |	    a:visited   | 	Selecciona el link que está visitado previamente  
 
+#### Pseudo-Elementos
+Selector    | 	Ejemplo   |  	Descripción
+::after	    |   p::after	|   Instertar contenido despues de cada elemento `<p>` 
+::before	  |   p::before	|   Insetar contenido antes de cada elemento `<p>`
+::first-letter|p::first-letter| Selecciona la primera letra de cada elemento `<p>` 
+::first-line | p::first-line | Selecciona la primera línea de cada elemento `<p>`  
+::selection |	p::selection |	Selecciona un fragmento del elemento definido por el usuario  
 
 #### Colores:
 Existen tres formas de definir los colores en CSS:  
