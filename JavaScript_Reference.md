@@ -20,7 +20,8 @@ Guía basada en el contenido ofrecido por [W3Schools](http://www.w3schools.com/j
 - [Objetos](#objetos)
 - [Strings](#strings)  
  - [Métodos de los strings](#métodos-de-los-strings)
-
+- [Number](#number)  
+ - [Métodos de number](#métodos-de-number)  
 
 ## Introducción
 JavaScript puede cambiar el contenido de los documentos HTML, encontramos los siguientes métodos:
@@ -202,7 +203,18 @@ método | descripción
 `link()`              |    Devuelve una cadena como link.  
  
 ## Number 
+La declaración de los number puede ser entero, decimal, alguna operación matemática, hexadecimal, etc...  
+*Si un resultado devuelve NaN, significa not a number, es decir, da un resultado con un valor no numérico.*  
 
+Existe la función `isNaN("valor")` devolverá el valor pasado por parámetro en caso de darse como resultado NaN.  
+Existe la posibilidad de definir number como objeto. Ejemplo: `var y = new Number(500);`  
+
+### Métodos de Number
+  método             |  descripción   
+---------------------|-----------------------------------------------  
+`toString()`         |  Convierte un number en una cadena de texto - string  
+`toExponential(num)` |  Devuelve una cadena, con un número redondeado y escribir usando la notación exponencial.  
+`toFixed()`
 
 
 
