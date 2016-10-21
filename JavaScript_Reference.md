@@ -18,8 +18,8 @@ Guía basada en el contenido ofrecido por [W3Schools](http://www.w3schools.com/j
 - [Funciones](#funciones)
 - [Eventos](#eventos)
 - [Objetos](#objetos)
-- [Strings](#strings)
-  -[Métodos de los strings](#métodos-de-los-strings)
+- [Strings](#strings)  
+ - [Métodos de los strings](#métodos-de-los-strings)
 
 
 ## Introducción
