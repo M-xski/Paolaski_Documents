@@ -26,7 +26,7 @@ Guía basada en la documentación que ofrece [W3Schools](http://www.w3schools.co
 - [Float - Clear](#float-y-clear) 
 - [Layout: Horizontal - Vertical align](#layout-horizontal---vertical-align)
 
-======  
+-----
 
 ### Introducción
 Para ubicar los estilos, existen tres formas:  
