@@ -368,7 +368,7 @@ windowSoftInputMode=["stateUnspecified", "stateUnchanged", "stateHidden", "state
 
 #### :black_circle: Service
 
-####:black_circle: Reciver
+#### :black_circle: Reciver
 
 #### :black_circle: Provider
 
