@@ -1,4 +1,4 @@
-###### *Kurumi · Studio (cc) 2016*
+###### *Paolaski (cc) 2016*
 
 # JavaScript: Reference Guide
 Guía basada en el contenido ofrecido por [W3Schools](http://www.w3schools.com/js/default.asp) sobre JavaScript.
